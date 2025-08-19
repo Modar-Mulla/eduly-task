@@ -1,0 +1,44 @@
+{
+  "name": "eduly-dashboard",
+  "private": true,
+  "license": "UNLICENSED",
+  "packageManager": "yarn@1.22.22",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "e2e:test": "playwright test",
+    "e2e:open": "playwright test --ui",
+    "e2e:update": "playwright test --update-snapshots",
+    "prepare": "playwright install --with-deps",
+    "start:e2e": "next build && next start -p 3000"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.1",
+    "@mui/material": "^7.3.1",
+    "@mui/material-nextjs": "^7.3.0",
+    "@mui/stylis-plugin-rtl": "^7.3.1",
+    "@mui/x-charts": "^8.10.1",
+    "@mui/x-data-grid": "^8.10.1",
+    "next": "^15.4.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "stylis": "^4.3.6",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.10",
+    "@types/stylis": "^4.2.7",
+    "jest": "^30.0.5",
+    "typescript": "5.9.2"
+  }
+}

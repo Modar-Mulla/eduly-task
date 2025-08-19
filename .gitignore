@@ -1,0 +1,53 @@
+# --- Node ---
+node_modules/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.seed
+*.tgz
+
+# --- Next.js ---
+.next/
+.next/cache/
+.next/static/
+out/            # next export output
+.vercel/
+
+# --- Build artifacts ---
+dist/
+build/
+*.tsbuildinfo
+
+# --- Testing (Jest / Playwright) ---
+coverage/
+.jest/
+.jest-cache/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+
+# --- Env files ---
+.env
+.env.local
+.env.*.local
+
+# --- Lint / Tooling caches ---
+.eslintcache
+
+# --- Editors / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+
+# --- Misc ---
+*.orig
+*.rej
