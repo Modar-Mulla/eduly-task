@@ -15,6 +15,7 @@ import ModeToggle from "@/shared-fe/theme/mode-toggle";
 import ProfileMenu from "@/components/header/profile-menu";
 import Sidebar from "@/components/nav/sidebar";
 import { useAuth } from "@/shared-fe/hooks/useAuth";
+import LanguageSwitcher from "../header/language-switcher";
 
 export default function Chrome({ children }: { children: React.ReactNode }) {
   const { t } = useTranslation();
@@ -88,7 +89,7 @@ export default function Chrome({ children }: { children: React.ReactNode }) {
             </Link>
           </Box>
 
-          
+          <LanguageSwitcher/>
           <ModeToggle />
 
       
